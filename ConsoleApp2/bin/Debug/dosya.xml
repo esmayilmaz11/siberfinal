@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed May 13 15:25:49 2020 as: nmap -p 80 -oX C:\\Users\\esma\\source\\repos\\ConsoleApp2\\ConsoleApp2\\bin\\Debug\\dosya.xml -&#45;script http-sql-injection testphp.vulnweb.com -->
+<nmaprun scanner="nmap" args="nmap -p 80 -oX C:\\Users\\esma\\source\\repos\\ConsoleApp2\\ConsoleApp2\\bin\\Debug\\dosya.xml -&#45;script http-sql-injection testphp.vulnweb.com" start="1589372749" startstr="Wed May 13 15:25:49 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1589372752" endtime="1589372792"><status state="up" reason="reset" reason_ttl="49"/>
+<address addr="176.28.50.165" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testphp.vulnweb.com" type="user"/>
+<hostname name="rs202995.rs.hosteurope.de" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="49"/><service name="http" method="table" conf="3"/><script id="http-sql-injection" output="&#xa;  Possible sqli for queries:&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/listproducts.php?cat=3%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/listproducts.php?cat=4%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/listproducts.php?cat=1%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/listproducts.php?cat=2%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/artists.php?artist=3%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/artists.php?artist=2%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/artists.php?artist=1%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/showimage.php?file=%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;    http://testphp.vulnweb.com:80/search.php?test=query%27%20OR%20sqlspider&#xa;"/></port>
+</ports>
+<times srtt="71000" rttvar="53250" to="284000"/>
+</host>
+<runstats><finished time="1589372792" timestr="Wed May 13 15:26:32 2020" elapsed="46.03" summary="Nmap done at Wed May 13 15:26:32 2020; 1 IP address (1 host up) scanned in 46.03 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
